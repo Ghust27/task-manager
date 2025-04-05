@@ -8,7 +8,6 @@ async function connectDB(){
     }
 
     const client = new MongoClient(process.env.MONGO_URI, {useUnifiedTopology: true})
-
     await client.connect()
 
     db = client.db()
